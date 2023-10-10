@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Cadastro e Listagem de Produtos</h1>
+    </header>
+    
+    <main>
+        <section id="Cadastro">
+            
+            <form id="cadastroProduto">
+                <h2>Cadastrar Produto</h2>
+                
+                <label for="nomeProduto">Nome do Produto:</label>
+                <input type="text" id="nomeProduto" required><br><br>
+        
+                <label for="descricaoProduto">Descrição do Produto:</label>
+                <input type="text" id="descricaoProduto" required><br><br>
+        
+                <label for="valorProduto">Valor do Produto:</label>
+                <input type="number" id="valorProduto" required><br><br>
+        
+                <label for="disponivelVenda">Disponível para venda:</label>
+                <select id="disponivelVenda">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br><br>
+        
+                <input type="submit" value="Cadastrar Produto" class="submit-button">
+            </form>
+        </section>
+
+        <section class="Listagem">
+            <h2>Listagem de Produtos</h2>
+            <table id="listaProdutos">
+                
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os produtos serão listados aqui -->
+                </tbody>
+            </table>
+            <button id="novoProdutoBtn">Cadastrar Novo Produto</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
